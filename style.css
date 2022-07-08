@@ -1,0 +1,118 @@
+/* Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: hsl(185, 75%, 39%) ;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background: url("./profile-card-component-main/images/bg-pattern-top.svg") no-repeat,
+url("./profile-card-component-main/images/bg-pattern-bottom.svg") no-repeat;
+background-position: right 45vw bottom 50vh,
+left 40vw top 50vh;
+}
+
+
+
+
+
+.card{
+    background-color: white;
+    /* padding: 20px; */
+    border-radius: 10px;
+    
+}
+.card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card-item{
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+.image-container{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+     position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    background: url("./profile-card-component-main/images/image-victor.jpg") center/cover no-repeat;
+}
+
+.info{
+    border-bottom: 1px solid hsl(227, 10%, 46%,50%) ;
+}
+
+.info-item{
+    margin-bottom :20px;
+}
+
+.info h3{
+    font-size: 20px;
+    margin-top: 20px;
+    color: hsl(229, 23%, 23%) ;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.info h3 span{
+    color:hsl(227, 10%, 46%) ;
+    margin-left: 6px;
+}
+.info p{
+    margin-top: 7px;
+    color:hsl(227, 10%, 46%) ;
+   
+}
+
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.stats h2{
+    color:hsl(229, 23%, 23%) ;
+    font-size: 20px;
+    
+}
+.stats p{
+    color:hsl(227, 10%, 46%) ;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .8px;
+    margin-top: 7px;
+}
+
+.statistics{
+    margin-left: 50px;
+}
+.statistics:nth-child(1){
+    margin-left: initial;
+}
